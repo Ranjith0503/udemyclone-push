@@ -61,11 +61,16 @@ body {
    color: white;
    padding: 10px;
    border-radius: 30px;
+   cursor: pointer;
 }
 
 .catagories p:hover {
-   background-color: rgb(170, 16, 236);
-   cursor: pointer;
+   background-color: rgb(236, 226, 240);
+   transition: 2s;
+   transition-duration:1s;
+   color: #A435f0;
+   border-color: #A435f0;
+  
 }
 
 .sale-image {
@@ -87,13 +92,23 @@ body {
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    border-radius: 8px;
    font-family: 'Times New Roman', Times, serif;
+   animation-name:zoom;
+   animation-duration: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+}
+@keyframes zoom{
+   0%{
+      transform: scale(0);
+      opacity: 0;
+
+   }
+   100%{
+      transform: scale(1);
+      opacity: 1;
+    }
 }
 
-.text-box p{
-   padding-top: 10px;
-   font-family: 'Times New Roman', Times, serif;
-
-}
 
 .sale-image__one {
    width: 100%;
