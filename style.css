@@ -138,6 +138,7 @@ p {
 
 .course-card {
    flex-grow: 1;
+   height:300px;
    flex-basis:20%;
    border: solid gray 1px;
    margin-left: 5px;
@@ -231,6 +232,7 @@ p {
 @media screen and (max-width:600px){
    .course-card{
       flex-basis:40%;
+
    }
    .catagories{
       display: none;
